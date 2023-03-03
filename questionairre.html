@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="questionairre.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="#" class="company-name">Bombay EDTech</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <button id="login-btn" onclick="window.location.href='login.html'">Login / Sign Up</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <form>
+        <h1>Questionairre</h1>
+        <label for="age">1. What is your age?</label>
+        <input type="number" id="age" name="age" min="5" max="100" value="20">
+        <br>
+
+        <label for="education">2. What is your current education?</label>
+        <input type="text" id="education" name="education">
+        <br>
+        <label>3. What is your field of interest?</label>
+        <div class="checkbox-container">
+            <label><input type="checkbox" name="interests" value="marketing">Marketing</label><br>
+            <label><input type="checkbox" name="interests" value="seo">SEO</label><br>
+            <label><input type="checkbox" name="interests" value="social-media-analytics">Social Media
+                Analytics</label><br>
+            <label><input type="checkbox" name="interests" value="social-media-analytics">Other <input type="text"
+                    id="age" name="other" value=""></label>
+
+        </div>
+        <label for="hours">4. How many hours can you dedicate to learn per day?</label>
+        <select name="hours" id="hours">
+            <option value="less_than_1">Less than 1 hr</option>
+            <option value="1_to_3">1-3 hrs</option>
+            <option value="3_to_5">3-5 hrs</option>
+            <option value="5_plus">5+ hrs</option>
+        </select>
+        <label>Are you confident with speaking skills?</label><br>
+<input type="radio" id="yes" name="confidence" value="yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="somewhat" name="confidence" value="somewhat">
+<label for="somewhat">Somewhat</label><br>
+<input type="radio" id="no" name="confidence" value="no">
+<label for="no">No</label>
+
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Developed by Bombay Coders</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
